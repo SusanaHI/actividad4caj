@@ -17,12 +17,9 @@
         <h1>Hello World!</h1>
         
         <h1>Area y Perimetro de un Triangulo</h1>
-        <%
-        
+        <%   
             Triangulo2 e1 = (Triangulo2) request.getAttribute("operacionResuelta");
-
         %>
-        
         <h3>AREA</h3><br>
         <%=e1.Area()%>
         <h3>PERIMETRO</h3>
