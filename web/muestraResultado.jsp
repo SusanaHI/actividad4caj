@@ -18,11 +18,12 @@
         
         <h1>Area y Perimetro de un Triangulo</h1>
         <%   
-            Triangulo2 e1 = (Triangulo2) request.getAttribute("operacionResuelta");
+            //double e1 = (double) request.getAttribute("areaResuelta");
+            //double e2 = (double) request.getAttribute("perimetroResuelto");
         %>
         <h3>AREA</h3><br>
-        <%=e1.Area()%>
+        <%=request.getAttribute("areaResuelta")%>
         <h3>PERIMETRO</h3>
-        <%=e1.Perimeter()%>
+        <%=request.getAttribute("perimetroResuelto")%>
     </body>
 </html>

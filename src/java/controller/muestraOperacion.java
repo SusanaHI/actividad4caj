@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet (name = "muestraOperacion", urlPatterns = {"/muestraOperaciones"})
+@WebServlet (name = "muestraOperacion", urlPatterns = {"/muestraOperacion"})
 
 public class muestraOperacion extends HttpServlet {
     
@@ -23,8 +23,9 @@ public class muestraOperacion extends HttpServlet {
             double area1=e1.Area(n1, n2);
             double peri2=e1.Perimeter(n1);
             
-            request.setAttribute("operacionResuelta", area1);
-            request.getRequestDispatcher("/muestraOperacion.jsp").forward(request, response);
+            request.setAttribute("areaResuelta", area1);
+            request.setAttribute("perimetroResuelto", peri2);
+            request.getRequestDispatcher("/muestraResultado.jsp").forward(request, response);
             
         }
     }

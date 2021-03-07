@@ -15,7 +15,7 @@
     </head>
     <body>
         <div>TRIANGULO EQUILATERO
-            <form action="Triangulo2" method="post">
+            <form action="muestraOperacion" method="post">
                 Introduzca la base del triangulo:<br>
                 <input type="text" name="base" value=""><br>
                 Introduzca la altura del triangulo:<br>
